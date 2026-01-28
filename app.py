@@ -6,7 +6,6 @@ import streamlit as st
 import pandas as pd
 import os
 import time
-from dotenv import load_dotenv
 from huggingface_hub import InferenceClient
 from pypdf import PdfReader
 
@@ -290,12 +289,7 @@ else:
         "<script>document.body.classList.remove('dark');</script>",
         unsafe_allow_html=True
     )
-
-# ------------------------------------------
-# LOAD ENV (.env for local, Secrets for cloud)
-# ------------------------------------------
-load_dotenv()
-
+ 
 # ------------------------------------------
 # SIDEBAR (AFTER LOGIN)
 # ------------------------------------------
