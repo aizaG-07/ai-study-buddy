@@ -368,7 +368,7 @@ def load_llama():
         st.stop()
 
     return InferenceClient(
-        model="meta-llama/Meta-Llama-3.1-8B-Instruct",
+        model="meta-llama/Llama-3.1-8B-Instruct", 
         token=api_token
     )
 
